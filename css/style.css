@@ -1,0 +1,542 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	SEA
+VERSION:	2.0
+-------------------------------------------------------------------*/
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+body {
+    font-family: "Pretendard";
+    margin: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -ms-overflow-style: none;
+    }
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+.bgc {
+    background-color: #2E2E2E;
+    }
+
+.background {
+    position:absolute;
+    top:0;
+    left:0;
+    height:55vh;
+    width:100%;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:1;
+    opacity: 0.3;
+    }
+
+img {
+    object-fit: contain;
+    }
+
+.particles-container{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+    background-image: url(../images/index/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+
+.navbar {
+    background-color: #EB5252;
+    }
+
+.nav-item {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 20px;
+    }
+
+.dropdown-item {
+    font-family: "Pretendard";
+    font-weight: 500;
+    font-size: 16px;
+    color: #EB5252;
+    }
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    }
+.dropdown-menu{
+    margin-top: 0;
+    }
+
+@media (min-width: 200px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+      }
+    }
+      
+@keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+      }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+      }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+      }
+    }
+      
+@-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+      }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+       }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+      }
+    }
+      
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+    }
+
+.button {
+    font-family: "Pretendard";
+    font-size: 20px;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    }
+
+.info {
+    color: #DBAFAF;
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 7px;
+    white-space:nowrap;
+    margin-right: auto;
+    }
+
+.info span {
+    display:block;
+    }
+
+.copyright {
+    color: #DBAFAF;
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 12px;
+    white-space:nowrap;
+    padding-right: 2%;
+    margin: auto;
+    }
+
+.banner-box {
+    position: absolute;
+    z-index:2;
+    width: 60%;
+    height: 20%;
+    top: 50%;
+	left: 50%;
+    transform: translate( -50%, -50% );
+    margin:auto;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    }
+
+.hero-section {
+    height:100%;
+    }
+
+.banner-title {
+    font-family: "Pretendard";
+    color: #eb5252;
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+    z-index:2;
+    }
+
+.banner-section-title {
+    font-size: 80px;
+    font-weight: 800;
+    }
+
+.section-subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+.mr-20 {
+    margin-right: 20px !important;
+    }  
+
+.mb-10 {
+    margin-bottom: 10px !important;
+    }
+   
+.mb-20 {
+    margin-bottom: 20px !important;
+    }
+      
+.mb-30 {
+    margin-bottom: 30px !important;
+    }
+      
+.mb-40 {
+    margin-bottom: 40px !important;
+    }
+      
+.mb-50 {
+    margin-bottom: 50px !important;
+    }
+      
+.mb-60 {
+    margin-bottom: 60px !important;
+    }
+      
+.mb-70 {
+    margin-bottom: 70px !important;
+    }
+      
+.mb-80 {
+    margin-bottom: 80px !important;
+    }
+      
+.mb-90 {
+    margin-bottom: 90px !important;
+    }
+      
+.mb-100 {
+    margin-bottom: 100px !important;
+    }
+
+.mr-2 {
+    margin-right: 15px !important;
+    }
+
+.mr-4 {
+    margin-right: 30px !important;
+    }
+
+#map {
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin-top: 10vh !important;
+    margin-bottom: 10vh !important;
+    }
+
+#map iframe{
+    width: 100%;
+    height: 100%;
+    border:0;
+    }
+
+#calendar {
+    max-width: 1000px;
+    height: auto;
+    margin-top: 15vh !important;
+    margin-bottom: 30vh !important;
+    }
+    
+#calendar iframe{
+    width: 100%;
+    height: 100%;
+    border:0;
+    }
+
+    .feature {
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      
+    .feature-item {
+        width: 360px !important;
+        height: 90px;
+    }
+      
+      .feature-item h4 {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1;
+        color: #eb5252;
+      }
+      
+      .feature-item p {
+        font-family: "Pretendard";
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+        line-height: 25px;
+
+      }
+
+      .feature-icon {
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        border-radius: 32px;
+        color: #fff;
+        font-size: 45px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        background: #EB5252;
+        text-align: center;
+      }
+
+      .feature-dis {
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      
+    .feature-dis-item {
+        width: 360px !important;
+        height: 240px;
+    }
+      
+      .feature-dis-item h4 {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 40px;
+        color: #eb5252;
+      }
+      
+      .feature-dis-item p {
+        font-family: "Pretendard";
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+      }
+      
+      .contact-info {
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 10%;
+      }
+
+
+      .contact-info-item {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      
+      .contact-info-item h4 {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 20px;
+        color: #eb5252;
+      }
+
+      .contact-info-icon {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        color: #EB5252;
+        font-size: 35px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        text-align: center;
+      }
+
+      .system-title {
+        font-family: "Pretendard";
+        color: #eb5252;
+        padding-top: 25vh;
+        padding-bottom: 10vh;
+        z-index:2;
+        }
+
+      .system {
+        max-width: 700px !important;
+      }
+
+      .class {
+        max-width: 500px !important;
+        margin-bottom: 25vh;
+      }
+
+      .one-only {
+        position: relative;
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+      
+    .one-only-item {
+        line-height: 0.5em !important;
+        width: 360px !important;
+        height: 240px;
+    }
+      
+      .one-only-item h4 {
+        font-family: "Pretendard";
+        font-weight: 600;
+        font-size: 35px;
+        color: #eb5252;
+      }
+      
+      .one-only-item p {
+        font-family: "Pretendard";
+        font-weight: 500;
+        font-size: 30px;
+        color: #eb5252;
+      }
+
+      .one {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 50px;
+        color: #eb5252;
+      }
+
+      .three {
+        line-height: 1em !important;
+      }
+
+      .meaning {
+        max-width: 650px !important;
+        border-width: 0px 0px 0px 5px ;
+        border-style: solid;
+        border-color: #EB5252;
+      }
+
+      .meaning h4 {
+        font-family: "Pretendard";
+        font-weight: 600;
+        font-size: 25px;
+        color: #eb5252;
+      }
+      
+      .meaning p {
+        font-family: "Pretendard";
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+      }
+
+      .meaning-bold {
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      .meaning-semi-bold {
+        font-weight: 600;
+        color: #eb5252;
+      }
+
+      .pubgm-class {
+        width: 180px !important;
+        height: 270px;
+    }
+
+    .coach {
+      position: relative;
+      min-width: 318px;
+			max-width: 450px;
+      aspect-ratio: 3 / 4;
+			min-height: 424px;
+      max-height: 600px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .coach:hover > .coachcard {
+			transform: rotateY(180deg);
+			cursor: pointer;
+		}
+		.coachcard{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			transform-style: preserve-3d;
+			transition: all 0.5s ease;
+		}
+      
+    .coachfront{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			background: #2E2E2E;
+      display: flex;
+      align-items: flex-end;
+		}
+
+    .coachname{
+      color: #eb5252;
+			text-align: left;
+			font-family: "Pretendard";
+			font-size: 25px;
+			font-weight: 800;
+      line-height: 10px;
+      margin-left: 8px;
+    }
+		
+    .coachnickname{
+      color: #eb5252;
+			text-align: left;
+			font-family: "Pretendard";
+			font-size: 40px;
+			font-weight: 800;
+      padding-bottom: 10px;
+      margin-left: 8px;
+    }
+
+		.coachback{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			background: #eb5252;
+			color: #fff;
+			text-align: left;
+			font-family: "Pretendard";
+			transform: rotateY(180deg);
+		}
+
+    .coachContent h3{
+			font-size: 20px;
+      font-weight: 700;
+      margin-left: 8px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+		}
+
+		.coachContent p{
+      font-weight: 500;
+			font-size: 15px;
+      margin-left: 16px;
+		}
