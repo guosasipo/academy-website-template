@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
 });
 particlesJS.load('particles-js', 'plugins/particles/particles.json', function() {
-    console.log('Welcome to SUMMIT E-Sports academy');
+    console.log('Welcome to Title');
     });
     var html_body = $('html, body');
     $('.page-scroll').on('click', function () { //use page-scroll class in any HTML tag for scrolling
